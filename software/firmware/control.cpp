@@ -1,6 +1,10 @@
 #include"control.h"
 
 Control::Control(int pin_lift, int pin_left, int pin_right){
+	SERVOPINLIFT = pin_lift;
+	SERVOPINLEFT = pin_left;
+	SERVOPINRIGHT = pin_right;
+
 	GoTo(0,100);
 	Lift(LIFT_STATE::BETWEEN_NUMS);
 }
